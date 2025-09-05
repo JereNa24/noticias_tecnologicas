@@ -39,6 +39,42 @@ nav a {
   padding: 50px 20px;
 }
 
+/* ====== BANNER DESTACADO ====== */
+.banner-destacado {
+  background: linear-gradient(135deg, #ffab91, #ffcc80);
+  text-align: center;
+  padding: 40px 20px;
+  margin: 20px 0;
+  border-radius: 12px;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.banner-destacado h2 {
+  margin-bottom: 10px;
+  font-size: 28px;
+  color: #4e342e;
+}
+
+.banner-destacado p {
+  margin-bottom: 20px;
+  font-size: 18px;
+  color: #5d4037;
+}
+
+.btn-banner {
+  display: inline-block;
+  padding: 12px 25px;
+  background: #d84315;
+  color: #fff;
+  text-decoration: none;
+  border-radius: 8px;
+  font-weight: bold;
+}
+
+.btn-banner:hover {
+  background: #bf360c;
+}
+
 /* ====== RECETAS ====== */
 #recetas {
   padding: 20px;
@@ -98,6 +134,7 @@ footer {
   color: #fff;
   padding: 10px;
 }
+
 
 
 
