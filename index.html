@@ -3,63 +3,64 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Noticias Tecnológicas</title>
-  <meta name="description" content="Últimas noticias tecnológicas e innovaciones">
-  <link rel="icon" href="images/favicon.png" type="image/png">
-  <link rel="stylesheet" href="style.css">
+  <title>Página de Recetas</title>
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- ====== HEADER ====== -->
   <header>
-    <h1>📰 Noticias Tecnológicas</h1>
-    <p>Las últimas novedades en tecnología e innovación</p>
+    <h1>Recetas Caseras</h1>
+    <nav>
+      <ul>
+        <li><a href="#inicio">Inicio</a></li>
+        <li><a href="#recetas">Recetas</a></li>
+        <li><a href="#contacto">Contacto</a></li>
+      </ul>
+    </nav>
   </header>
 
-  <main>
-    <section class="noticias">
+  <!-- ====== SECCIÓN INICIO ====== -->
+  <section id="inicio" class="hero">
+    <h2>Bienvenido a mi página de recetas</h2>
+    <p>Descubre recetas fáciles, rápidas y deliciosas.</p>
+  </section>
 
-      <!-- Noticia 1 -->
-      <article class="noticia">
-        <img src="images/ia.jpg" alt="Inteligencia Artificial">
-        <h2>Avances en Inteligencia Artificial</h2>
-        <p class="fecha">Publicado: 02/09/2025</p>
-        <p>La IA continúa revolucionando sectores como la salud, la educación y el transporte.</p>
-        <a href="https://www.bbva.com/es/tecnologia/inteligencia-artificial/" target="_blank">Leer más</a>
-      </article>
+  <!-- ====== SECCIÓN RECETAS ====== -->
+  <section id="recetas">
+    <h2>Nuestras Recetas</h2>
+    <div class="receta-card">
+      <h3>Spaghetti a la Boloñesa</h3>
+      <p>Una receta clásica italiana con carne molida y salsa de tomate.</p>
+    </div>
+    <div class="receta-card">
+      <h3>Ensalada César</h3>
+      <p>Refrescante ensalada con pollo, crutones y aderezo césar.</p>
+    </div>
+  </section>
 
-      <!-- Noticia 2 -->
-      <article class="noticia">
-        <img src="images/robot.jpg" alt="Robótica">
-        <h2>Robots en la industria</h2>
-        <p class="fecha">Publicado: 30/08/2025</p>
-        <p>Los robots industriales cada vez son más comunes en fábricas de todo el mundo.</p>
-        <a href="https://elpais.com/tecnologia/" target="_blank">Leer más</a>
-      </article>
+  <!-- ====== SECCIÓN CONTACTO ====== -->
+  <section id="contacto">
+    <h2>Contáctanos</h2>
+    <form class="contact-form">
+      <label for="nombre">Nombre</label>
+      <input type="text" id="nombre" name="nombre" required>
 
-      <!-- Noticia 3 -->
-      <article class="noticia">
-        <img src="images/5g.jpg" alt="Red 5G">
-        <h2>Expansión de la red 5G</h2>
-        <p class="fecha">Publicado: 25/08/2025</p>
-        <p>La red 5G ya está disponible en la mayoría de capitales del mundo.</p>
-        <a href="https://www.xataka.com/" target="_blank">Leer más</a>
-      </article>
+      <label for="email">Correo electrónico</label>
+      <input type="email" id="email" name="email" required>
 
-      <!-- Noticia 4 -->
-      <article class="noticia">
-        <img src="images/vr.jpg" alt="Realidad Virtual">
-        <h2>Realidad Virtual en la educación</h2>
-        <p class="fecha">Publicado: 20/08/2025</p>
-        <p>La realidad virtual transforma la manera en que los estudiantes aprenden.</p>
-        <a href="https://www.lavanguardia.com/tecnologia" target="_blank">Leer más</a>
-      </article>
+      <label for="mensaje">Mensaje</label>
+      <textarea id="mensaje" name="mensaje" rows="5" required></textarea>
 
-    </section>
-  </main>
+      <button type="submit">Enviar</button>
+    </form>
+  </section>
 
+  <!-- ====== FOOTER ====== -->
   <footer>
-    <p>🌐 Noticias Tecnológicas © 2025 | Desarrollado por Jennifer</p>
+    <p>&copy; 2025 Recetas Caseras. Todos los derechos reservados.</p>
   </footer>
 </body>
 </html>
+
 
 
