@@ -1,3 +1,6 @@
+/* =============================
+   Estilos generales
+============================= */
 body {
     font-family: 'Roboto', sans-serif;
     margin: 0;
@@ -8,6 +11,10 @@ body {
     min-height: 100vh;
     line-height: 1.6;
 }
+
+/* =============================
+   Header
+============================= */
 header {
     background: #0077cc;
     color: white;
@@ -17,21 +24,26 @@ header {
     justify-content: space-between;
     flex-wrap: wrap;
 }
+
 .logo {
     display: flex;
     align-items: center;
 }
+
 .logo img {
     height: 40px;
     margin-right: 10px;
 }
+
 .logo h1 {
     margin: 0;
     font-size: 1.8rem;
 }
+
 nav {
     margin-top: 10px;
 }
+
 nav a {
     color: white;
     text-decoration: none;
@@ -39,9 +51,33 @@ nav a {
     font-weight: 700;
     font-size: 1rem;
 }
+
 nav a:hover {
     text-decoration: underline;
 }
+
+/* =============================
+   Noticias destacadas
+============================= */
+.destacadas {
+    grid-column: 1 / -1; /* ocupa todo el ancho en el grid */
+    background: #ff5722;
+    color: white;
+    padding: 20px;
+    border-radius: 10px;
+    margin-bottom: 20px;
+    text-align: center;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.2);
+}
+
+.destacadas h2 {
+    margin: 0 0 10px;
+    font-size: 1.8rem;
+}
+
+/* =============================
+   Main
+============================= */
 main {
     flex: 1;
     padding: 30px 20px;
@@ -49,6 +85,10 @@ main {
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
     gap: 20px;
 }
+
+/* =============================
+   Artículos
+============================= */
 article {
     background: white;
     padding: 20px;
@@ -59,23 +99,28 @@ article {
     justify-content: space-between;
     transition: transform 0.2s ease, box-shadow 0.2s ease;
 }
+
 article:hover {
     transform: scale(1.02);
     box-shadow: 0 4px 15px rgba(0,0,0,0.2);
 }
+
 article img {
     max-width: 100%;
     border-radius: 5px;
 }
+
 article h2 {
     margin-top: 0;
     color: #0077cc;
     font-size: 1.4rem;
 }
+
 article p {
     font-size: 1rem;
     margin: 8px 0;
 }
+
 .fecha {
     display: inline-block;
     background: #e6f3ff;
@@ -86,6 +131,7 @@ article p {
     font-weight: bold;
     margin-bottom: 10px;
 }
+
 article a {
     align-self: flex-start;
     margin-top: 12px;
@@ -96,9 +142,14 @@ article a {
     border-radius: 5px;
     font-size: 0.95rem;
 }
+
 article a:hover {
     background: #005fa3;
 }
+
+/* =============================
+   Footer
+============================= */
 footer {
     background: #222;
     color: white;
@@ -106,24 +157,26 @@ footer {
     padding: 15px;
     font-size: 0.9rem;
 }
-/* 🔹 Diseño responsive para móviles */
+
+/* =============================
+   Responsive
+============================= */
 @media (max-width: 600px) {
     header {
         flex-direction: column;
         text-align: center;
     }
+
     nav {
         margin-top: 10px;
-        display: flex;
-        flex-direction: column;
-        gap: 10px;
     }
+
     nav a {
-        margin: 0;
-        font-size: 1.1rem;
+        margin: 0 10px;
     }
+
     main {
-        padding: 20px 10px;
         grid-template-columns: 1fr;
     }
 }
+
