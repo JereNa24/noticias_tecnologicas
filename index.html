@@ -20,11 +20,23 @@
         header {
             background: #0077cc;
             color: white;
-            padding: 20px;
+            padding: 15px 20px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            flex-wrap: wrap;
         }
-        header h1 {
+        .logo {
+            display: flex;
+            align-items: center;
+        }
+        .logo img {
+            height: 40px;
+            margin-right: 10px;
+        }
+        .logo h1 {
             margin: 0;
-            font-size: 2rem;
+            font-size: 1.8rem;
         }
         nav {
             margin-top: 10px;
@@ -32,7 +44,7 @@
         nav a {
             color: white;
             text-decoration: none;
-            margin-right: 20px;
+            margin-left: 20px;
             font-weight: 700;
             font-size: 1rem;
         }
@@ -92,7 +104,10 @@
 </head>
 <body>
     <header>
-        <h1>Noticias Tecnológicas</h1>
+        <div class="logo">
+            <img src="https://via.placeholder.com/40" alt="Logo">
+            <h1>Noticias Tecnológicas</h1>
+        </div>
         <nav>
             <a href="#">Inicio</a>
             <a href="#">Noticias</a>
@@ -140,6 +155,7 @@
     </footer>
 </body>
 </html>
+
 
 
 
