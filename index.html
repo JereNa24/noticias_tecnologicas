@@ -7,13 +7,32 @@
     <style>
         body {
             font-family: Arial, sans-serif;
-            margin: 20px;
+            margin: 0;
             background-color: #f4f4f9;
             color: #333;
         }
-        h1 {
-            text-align: center;
-            color: #222;
+        header {
+            background: #0077cc;
+            color: white;
+            padding: 15px 20px;
+        }
+        header h1 {
+            margin: 0;
+        }
+        nav {
+            margin-top: 10px;
+        }
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-right: 15px;
+            font-weight: bold;
+        }
+        nav a:hover {
+            text-decoration: underline;
+        }
+        main {
+            padding: 20px;
         }
         article {
             background: white;
@@ -46,41 +65,51 @@
     </style>
 </head>
 <body>
-    <h1>Noticias Tecnológicas</h1>
+    <header>
+        <h1>Noticias Tecnológicas</h1>
+        <nav>
+            <a href="#">Inicio</a>
+            <a href="#">Noticias</a>
+            <a href="#">Sobre nosotros</a>
+            <a href="#">Contacto</a>
+        </nav>
+    </header>
 
-    <article>
-        <h2>Apple lanza el iPhone 16</h2>
-        <img src="https://via.placeholder.com/300x200" alt="iPhone 16">
-        <p><strong>Fecha:</strong> 1 de septiembre de 2025</p>
-        <p>Apple presentó su nuevo iPhone 16 con mejoras en la cámara y batería.</p>
-        <a href="https://www.apple.com">Leer más</a>
-    </article>
+    <main>
+        <article>
+            <h2>Apple lanza el iPhone 16</h2>
+            <img src="https://via.placeholder.com/300x200" alt="iPhone 16">
+            <p><strong>Fecha:</strong> 1 de septiembre de 2025</p>
+            <p>Apple presentó su nuevo iPhone 16 con mejoras en la cámara y batería.</p>
+            <a href="https://www.apple.com">Leer más</a>
+        </article>
 
-    <article>
-        <h2>Google anuncia avances en IA</h2>
-        <img src="https://via.placeholder.com/300x200" alt="Google IA">
-        <p><strong>Fecha:</strong> 28 de agosto de 2025</p>
-        <p>Google presentó un nuevo modelo de inteligencia artificial más eficiente.</p>
-        <a href="https://www.google.com">Leer más</a>
-    </article>
+        <article>
+            <h2>Google anuncia avances en IA</h2>
+            <img src="https://via.placeholder.com/300x200" alt="Google IA">
+            <p><strong>Fecha:</strong> 28 de agosto de 2025</p>
+            <p>Google presentó un nuevo modelo de inteligencia artificial más eficiente.</p>
+            <a href="https://www.google.com">Leer más</a>
+        </article>
 
-    <article>
-        <h2>Tesla mejora la autonomía de sus autos</h2>
-        <img src="https://via.placeholder.com/300x200" alt="Tesla">
-        <p><strong>Fecha:</strong> 25 de agosto de 2025</p>
-        <p>Los nuevos modelos de Tesla logran superar los 700 km por carga.</p>
-        <a href="https://www.tesla.com">Leer más</a>
-    </article>
+        <article>
+            <h2>Tesla mejora la autonomía de sus autos</h2>
+            <img src="https://via.placeholder.com/300x200" alt="Tesla">
+            <p><strong>Fecha:</strong> 25 de agosto de 2025</p>
+            <p>Los nuevos modelos de Tesla logran superar los 700 km por carga.</p>
+            <a href="https://www.tesla.com">Leer más</a>
+        </article>
 
-    <article>
-        <h2>Microsoft lanza Windows 12</h2>
-        <img src="https://via.placeholder.com/300x200" alt="Windows 12">
-        <p><strong>Fecha:</strong> 20 de agosto de 2025</p>
-        <p>Windows 12 trae una interfaz renovada y mejor integración con la nube.</p>
-        <a href="https://www.microsoft.com">Leer más</a>
-    </article>
-
+        <article>
+            <h2>Microsoft lanza Windows 12</h2>
+            <img src="https://via.placeholder.com/300x200" alt="Windows 12">
+            <p><strong>Fecha:</strong> 20 de agosto de 2025</p>
+            <p>Windows 12 trae una interfaz renovada y mejor integración con la nube.</p>
+            <a href="https://www.microsoft.com">Leer más</a>
+        </article>
+    </main>
 </body>
 </html>
+
 
 
