@@ -115,6 +115,28 @@
             padding: 15px;
             font-size: 0.9rem;
         }
+
+        /* 🔹 Diseño responsive para móviles */
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                text-align: center;
+            }
+            nav {
+                margin-top: 10px;
+                display: flex;
+                flex-direction: column;
+                gap: 10px;
+            }
+            nav a {
+                margin: 0;
+                font-size: 1.1rem;
+            }
+            main {
+                padding: 20px 10px;
+                grid-template-columns: 1fr;
+            }
+        }
     </style>
 </head>
 <body>
@@ -170,6 +192,7 @@
     </footer>
 </body>
 </html>
+
 
 
 
